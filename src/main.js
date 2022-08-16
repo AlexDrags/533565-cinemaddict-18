@@ -1,4 +1,5 @@
 import {render} from './render.js';
+
 import NewTaskUserTitleView from './view/user-title-view.js';
 import NewMainNavigationView from './view/main-navigation-view.js';
 import NewSortView from './view/sort-view.js';
@@ -28,4 +29,5 @@ render(filmListContainer, filmList.getElement());
 render(new NewFilmCardView(), filmListContainer.getElement());
 render(new NewButtonShowMoreView(), filmListContainer.getElement());
 render(new NewFooterStatisticsView(), footerStatisticsElement);
+
 

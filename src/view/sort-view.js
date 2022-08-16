@@ -1,13 +1,17 @@
+
 import { createElement } from '../render.js';
 
 const createSortTemplate = () => '<ul class="sort"><li><a href="#" class="sort__button sort__button--active">Sort by default</a></li><li><a href="#" class="sort__button">Sort by date</a></li><li><a href="#" class="sort__button">Sort by rating</a></li></ul>';
 export default class NewSortView {
+
   getTemplate() {
     return createSortTemplate();
   }
 
   getElement() {
+
     if(!this.element){
+
       this.element = createElement(this.getTemplate());
     }
     return this.element;
@@ -17,5 +21,4 @@ export default class NewSortView {
     this.element = null;
   }
 }
-
 
