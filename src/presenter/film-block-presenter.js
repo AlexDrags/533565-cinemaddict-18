@@ -5,7 +5,7 @@ import NewFilmCardView from '../view/film-card-view.js';
 import NewFilmListContainerView from '../view/films-list-container-view.js';
 const COUNT_FILM_CARD = 5;
 import NewButtonShowMoreView from '../view/button-show-more-view.js';
-// import NewFooterStatisticsView from '../view/footer-statistics-view.js';
+
 
 export default class FilmContentPresenter {
   filmContent = new NewFilmContentView();
@@ -24,6 +24,6 @@ export default class FilmContentPresenter {
     render(new NewButtonShowMoreView,this.filmContent.getElement());
   };
 
-  // render(new NewFooterStatisticsView(), footerStatisticsElement);
+
 }
 
